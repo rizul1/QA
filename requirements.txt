@@ -6,3 +6,6 @@ chromadb
 tiktoken
 openai
 pdf2image
+pdfminer.six
+pikepdf
+pdfplumber
