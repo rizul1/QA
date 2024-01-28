@@ -10,6 +10,7 @@ bleach
 cachetools
 certifi
 cryptography
+cv2
 fastapi
 fastjsonschema
 filelock
