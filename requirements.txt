@@ -1,2 +1,7 @@
 streamlit==0.88.0
 langchain
+unstructured
+pandas
+chromadb
+tiktoken
+openai
