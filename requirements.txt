@@ -5,3 +5,4 @@ pandas
 chromadb
 tiktoken
 openai
+pdf2image
