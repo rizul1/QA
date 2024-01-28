@@ -30,6 +30,10 @@ jsonpath-python
 jsonpointer
 jsonschema
 jupyterlab
+langchain
+langchain-community
+langchain-core                         
+langchain-openai
 matplotlib
 nest-asyncio
 notebook
