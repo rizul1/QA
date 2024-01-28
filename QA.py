@@ -15,7 +15,7 @@ text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
 texts = text_splitter.split_documents(data)
 
 # Load embeddings into Chroma
-embeddings = OpenAIEmbeddings(openai_api_key='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')
+embeddings = OpenAIEmbeddings(openai_api_key='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')
 vectorstore = Chroma.from_documents(texts, embeddings)
 
 # Create Streamlit app
@@ -32,7 +32,7 @@ if question:
         docs = vectorstore.similarity_search(question)
 
         # Question-answering
-        llm = ChatOpenAI(temperature=0, openai_api_key='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')
+        llm = ChatOpenAI(temperature=0, openai_api_key='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')
         chain = load_qa_chain(llm, chain_type="stuff")
         answer = chain.run(input_documents=docs, question=question)
 
